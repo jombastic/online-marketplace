@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <title>Online Marketplace</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Online Marketplace</h1>
+      <h2>Choose Your Product</h2>
+
+      <form id="products">
+        <select class="form-control" id="selection">
+          <option>
+            Dress
+          </option>
+          <option>
+            Purse
+          </option>
+          <option>
+            Necklace
+          </option>
+        </select>
+
+        <div id="radios">
+          <div class="radio-inline">
+            <label>
+            <input type="radio" name="color" value="red" checked="checked"/>
+              Red
+            </label>
+          </div>
+          <div class="radio-inline">
+            <label>
+            <input type="radio" name="color" value="blue" />
+              Blue
+            </label>
+          </div>
+          <div class="radio-inline">
+            <label>
+            <input type="radio" name="color" value="green" />
+              Green
+            </label>
+          </div>
+        </div>
+      </form>
+
+      <h2>Please Fill In Your Order Details</h2>
+      <form id="contact">
+        <div class="form-group">
+          <label for="name">Name And Surname:</label>
+          <input type="text" class="form-control" id="name" placeholder="Name And Surname"/>
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <input type="text" class="form-control" id="address" placeholder="Address"/>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="example@mail.com" />
+        </div>
+        <div class="form-group">
+          <label for="phone">Telephone Number:</label>
+          <input type="tel" class="form-control" id="phone" placeholder="Phone" />
+        </div>
+      </form>
+    </div>
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
