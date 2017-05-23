@@ -1,3 +1,7 @@
-/*#radios, #contact {
+#contact, #receipt {
   display: none;
-}*/
+}
+
+#img-column {
+  border: 1px solid black;
+}

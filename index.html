@@ -11,41 +11,46 @@
       <h2>Choose Your Product</h2>
 
       <form id="products">
-        <select class="form-control" id="selection">
-          <option>
-            Dress
-          </option>
-          <option>
-            Purse
-          </option>
-          <option>
-            Necklace
-          </option>
-        </select>
+        <div class="row">
+          <div class="col-md-6">
+            <select class="form-control" id="selection">
+              <option>
+                Dress
+              </option>
+              <option>
+                Purse
+              </option>
+              <option>
+                Necklace
+              </option>
+            </select>
+          </div>
+        </div>
 
-        <div id="radios">
-          <div class="radio-inline">
-            <label>
-            <input type="radio" name="color" value="red" checked="checked"/>
-              Red
-            </label>
-          </div>
-          <div class="radio-inline">
-            <label>
-            <input type="radio" name="color" value="blue" />
-              Blue
-            </label>
-          </div>
-          <div class="radio-inline">
-            <label>
-            <input type="radio" name="color" value="green" />
-              Green
-            </label>
-          </div>
+        <div class="radio-inline">
+          <label>
+          <input type="radio" name="color" value="Red" checked="checked"/>
+            Red
+          </label>
+        </div>
+        <div class="radio-inline">
+          <label>
+          <input type="radio" name="color" value="Blue" />
+            Blue
+          </label>
+        </div>
+        <div class="radio-inline">
+          <label>
+          <input type="radio" name="color" value="Green" />
+            Green
+          </label>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-default">Buy Now</button>
         </div>
       </form>
 
-      <div id="contact">
+      <form id="contact">
         <h2>Please Fill In Your Order Details</h2>
         <div class="form-group">
           <label for="name">Name And Surname:</label>
@@ -63,9 +68,11 @@
           <label for="phone">Telephone Number:</label>
           <input type="tel" class="form-control" id="phone" placeholder="Phone" />
         </div>
-      </div>
 
-      <div>
+        <button type="submit" class="btn btn-default">Purchase</button>
+      </form>
+
+      <div id="receipt">
         <h2>Receipt</h2>
         <h3>Shipping Information</h3>
         <p>
@@ -74,8 +81,7 @@
         <h3>Product Details</h3>
         <p>
           Product: <span id="product"></span> <br />
-          Quantity: <span id="quantity"></span> <br />
-          Price: <span id="price"></span>
+          Color: <span id="color"></span> <br />
         </p>
       </div>
 
